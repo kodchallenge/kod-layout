@@ -1,8 +1,13 @@
+import React from "react"
 
-const Tab = () => {
+export type TabProps = {
+
+}
+
+const Tab: React.FC<TabProps & React.HTMLAttributes<HTMLDivElement>> = ({...props}) => {
   return (
-    <div>
-
+    <div {...props}>
+      {props.children}
     </div>
   )
 }
