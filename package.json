@@ -30,7 +30,9 @@
     "watch": "vitest",
     "coverage": "vitest run --coverage"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react-split": "^2.0.14"
+  },
   "devDependencies": {
     "@testing-library/dom": "^8.19.0",
     "@testing-library/react": "^13.4.0",
