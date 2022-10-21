@@ -1,20 +1,17 @@
 import KodLayout from '@kod-layout'
 import { useState } from 'react'
+import CodePen from './CodePen'
+import JsFiddle from './JsFiddle'
+import LeetCode from './LeetCode'
+import PlayCode from './PlayCode'
 function App() {
 
   return (
     <div className="App">
-      <KodLayout.Base>
-        <KodLayout.Header>
-          This is Header
-        </KodLayout.Header>
-        {/* <KodLayout.Sidebar /> */}
-        <KodLayout.Row>
-          <KodLayout.Tab />
-          <KodLayout.Tab />
-        </KodLayout.Row>
-        <KodLayout.Footer />
-      </KodLayout.Base>
+      {/* <CodePen /> */}
+      {/* <LeetCode /> */}
+      {/* <JsFiddle /> */}
+      <PlayCode />
     </div>
   )
 }
