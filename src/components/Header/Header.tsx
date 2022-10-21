@@ -1,5 +1,4 @@
-import React, { useContext } from 'react'
-import { ThemeContext } from '../../theme/theme-context'
+import React from 'react'
 export type HeaderProps = {
 
 }
