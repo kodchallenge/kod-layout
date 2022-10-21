@@ -1,9 +1,14 @@
 {
   "name": "kod-layout",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "license": "MIT",
-  "author": "Yasin Torun",
+  "author": "Yasin Torun (https://github.com/yasintorun)",
+  "repository": "https://github.com/kodchallenge/kod-layout",
+  "homepage": "https://github.com/kodchallenge/kod-layout#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": [
     "Layout",
     "react",
@@ -16,12 +21,12 @@
     "dist",
     "README.md"
   ],
-  "main": "./dist/my-component.umd.js",
-  "module": "./dist/my-component.es.js",
+  "main": "./dist/kod-layout.umd.js",
+  "module": "./dist/kod-layout.es.js",
   "exports": {
     ".": {
-      "import": "./dist/my-component.es.js",
-      "require": "./dist/my-component.umd.js"
+      "import": "./dist/kod-layout.es.js",
+      "require": "./dist/kod-layout.umd.js"
     }
   },
   "scripts": {

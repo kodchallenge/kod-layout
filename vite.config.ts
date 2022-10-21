@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/lib/index.jsx'),
+      entry: path.resolve(__dirname, 'src/index.d.ts'),
       name: 'Kod Layout',
       fileName: (format) => `kod-layout.${format}.ts`
     },
@@ -16,7 +16,7 @@ export default defineConfig({
         globals: {
           react: 'React'
         }
-      }
+      },
     }
   },
   plugins: [react()]
