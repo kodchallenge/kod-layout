@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Footer = () => {
+export type FooterProps = {
+
+}
+
+const Footer: React.FC<FooterProps & React.HTMLAttributes<HTMLDivElement>> = ({...props}) => {
   return (
-    <div>Footer</div>
+    <footer {...props}>
+      {props.children}
+    </footer>
   )
 }
 
