@@ -1,7 +1,7 @@
 {
   "name": "kod-layout",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "author": "Yasin Torun (https://github.com/yasintorun)",
   "repository": "https://github.com/kodchallenge/kod-layout",
@@ -23,6 +23,7 @@
   ],
   "main": "./dist/kod-layout.umd.js",
   "module": "./dist/kod-layout.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/kod-layout.es.js",
@@ -53,7 +54,12 @@
     "react-test-renderer": "^18.2.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
+    "vite-plugin-dts": "^1.6.6",
+    "vite-tsconfig-paths": "^3.5.2",
     "vitest": "^0.24.3"
+  },
+  "peerDependencies": {
+    "react-split": "^2.0.14"
   },
   "browserslist": {
     "production": [

@@ -6,6 +6,8 @@ import Row from "./components/Row/Row";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Tab from "./components/Tab/Tab";
 
+export type {BaseProps} from './components/Base/Base'
+
 export default {
     Base,
     Header,
