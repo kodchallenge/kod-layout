@@ -28,13 +28,15 @@ const getInlineCss = () => {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      overflow: hidden;
     }
     .kl-base .kl-split {
       height: 100%;
     }
 
-    .kl-base .kl-row {
-      height: 100%;
+    .kl-base .kl-row, .kl-base .kl-column {
+      flex-grow: 1;
+      overflow: auto;
     }
 
     .kl-base .kl-row > .kl-split {
@@ -73,6 +75,10 @@ const getInlineCss = () => {
     .kl-base .gutter.gutter-vertical {
       cursor: row-resize;
       width: 100% !important;
+    }
+
+    .kl-base .kl-tab {
+      overflow: auto;
     }
   `
 }

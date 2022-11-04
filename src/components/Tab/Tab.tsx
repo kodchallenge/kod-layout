@@ -6,7 +6,7 @@ export type TabProps = {
 
 const Tab: React.FC<TabProps & React.HTMLAttributes<HTMLDivElement>> = ({...props}) => {
   return (
-    <div {...props}>
+    <div className="kl-tab" {...props}>
       {props.children}
     </div>
   )
