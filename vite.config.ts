@@ -4,6 +4,8 @@ import react from '@vitejs/plugin-react'
 import tsConfigPaths from 'vite-tsconfig-paths'
 import dts from 'vite-plugin-dts'
 
+const pkg = require('./package.json')
+
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
@@ -11,7 +13,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src/index.d.ts'),
       name: 'KodLayout',
       formats: ['es', 'umd'],
-      fileName: (format) => `kod-layout.${format}.ts`
+      fileName: (format) => `kod-layout.${format}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom', "react-split"],
